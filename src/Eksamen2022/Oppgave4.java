@@ -1,11 +1,11 @@
 package Eksamen2022;
 
+
 public class Oppgave4 {
+    public static void main(String[] args) {
+
+    }
 }
-
-
-
-
 /*
 
 Lag en klasse kalt KonverterTemperatur. Denne klassen skal inneholde to statiske metoder kalt

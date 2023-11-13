@@ -1,4 +1,6 @@
 package Eksamen2022;
+
+
 /*Lag en klasse kalt Liste for å behandle arrays.
 Lag følgende statiske metoder i denne klassen som behandler arrays:
 1) Tar et heltallsarray inn og returnerer hvor mange elementer som er større enn null
@@ -7,9 +9,18 @@ også inn i metoden)
 3) Tar et heltallsarray inn og finner det største tallet i arrayet
 Til slutt skriv kode i main-metoden for å kalle de ulike metodene med et heltallsarray
 Resultatet skal skrives ut på System.out.
-Skriv ditt svar her
+Skriv ditt svar her*/
 
 
+
+public class Oppgave2 {
+}
+
+
+
+
+
+/*
 public static int positive(int [] liste){
 int teller = 0;
 for (int i : liste){
@@ -47,5 +58,4 @@ System.out.println("Antallet enere i listen er "+ Liste.antallTall(liste, 1));
 
 
 * */
-public class Oppgave2 {
-}
+
