@@ -2,38 +2,31 @@ package Eksamen2022;
 import static javax.swing.JOptionPane.*;
 public class Oppgave3 {
     public static void main(String[] args) {
-       double vekt,høyde;
+        double vekt, høyde2;
+        String innVekt = showInputDialog("Skriv vekten din i kg: ");
+        String innHøyd2 = showInputDialog("Skriv høyden din i cm: ");
 
-       String innVekt = showInputDialog("Skriv inn kg");
-       String innHøyde = showInputDialog("Skriv inn høyden din");
 
-       try {
-           vekt = Double.parseDouble(innVekt);
-           høyde = Double.parseDouble(innHøyde);
-
+        try {
+            vekt = Double.parseDouble(innVekt);
+            høyde2 = Double.parseDouble(innHøyd2);
+        } catch (Exception e) {
+            vekt = 0 ;
+            høyde2 = 0;
         }
-       catch (Exception e){
-           vekt = 0;
-           høyde = 0;
-       }
-       if (vekt <= 0 || høyde <= 0){
-           showMessageDialog(null, "Skriv en gyldig verdig");
-       }else{
+
+        if (vekt <=0 || høyde2 <=0){
+            System.out.println("Det er ikke gyldig");
+        }else{
+
+           double BMI = (double)( 1.3 * vekt) / (Math.pow ( (høyde2/100), 2.5 ));
+            showMessageDialog(null, String.format("%.2f",BMI));
+        }
 
 
 
-           double BMI = (1.3*vekt)/(Math.pow(høyde/100,2.5));
-           showMessageDialog(null, "Din BMI er : "+String.format("%.3f",BMI));
-
-
-       }
     }
 }
-
-
-
-
-
 
 /* Det skal lages et program som regner ut BMI (Body Mass Index). Det skal brukes input-
         dialogbokser og meldingsboks fra Swing- biblioteket.

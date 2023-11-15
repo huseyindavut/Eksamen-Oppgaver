@@ -1,13 +1,25 @@
 package Eksamen2022;
 
+class KonverterTemperatur{
 
+    public static double tilCelsius (double F){
+        double C = (F - 32) / 1.8;
+        return C;
+    }
+
+    public static double tilFahrenheiht(double C){
+        double F = C * 1.8 + 32;
+        return F;
+    }
+
+}
 public class Oppgave4 {
     public static void main(String[] args) {
-
+        System.out.println("Celcius er:"+String.format("%.2f",KonverterTemperatur.tilCelsius(62)));
+        System.out.println("Fahrenheit er:"+String.format("%.2f",KonverterTemperatur.tilFahrenheiht(20)));
     }
 }
 /*
-
 Lag en klasse kalt KonverterTemperatur. Denne klassen skal inneholde to statiske metoder kalt
 tilCelsius og tilFahrenheiht. Metodene skal regne ut fra Fahernheit til Celsius i den ene metoden
 og motsatt i den andre. Metodene skal motta og returnere et desimal tall.
