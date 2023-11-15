@@ -25,4 +25,25 @@ Skriv ditt svar her
 Maks poeng: 15
 
 
+
+
+int sum = 0;
+for (int i = 10; i<= 1000; i+=10){
+sum = sum + i;
+}
+System.out.println("Summen er "+sum);
+sum = 0;
+int i = 10;
+while (i <= 1000){
+sum = sum + i;
+i += 10;
+}
+System.out.println("Summen er "+sum);
+for (int j = 10; j >=-10; j--){
+if(j!=-10){
+System.out.print(j+",");
+}
+else{
+System.out.print(j);
+
  */
